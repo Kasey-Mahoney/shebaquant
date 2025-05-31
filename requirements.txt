@@ -1,0 +1,9 @@
+streamlit
+numpy
+matplotlib
+fpdf2
+pandas
+altair
+scikit-learn
+bcrypt
+python-dotenv

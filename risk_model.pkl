@@ -1,0 +1,33 @@
+import pandas as pd
+from sklearn.ensemble import RandomForestRegressor
+from sklearn.preprocessing import OneHotEncoder
+from sklearn.pipeline import make_pipeline
+from sklearn.compose import ColumnTransformer
+import joblib
+
+# Sample synthetic training data
+data = pd.DataFrame({
+    "Revenue": [100000, 250000, 500000, 1000000, 750000],
+    "Margin": [0.10, 0.20, 0.30, 0.25, 0.15],
+    "Industry": ["Tech", "Consumer", "Industrial", "Biotech", "Energy"],
+    "RiskScore": [0.20, 0.10, 0.08, 0.25, 0.15]
+})
+
+# Define features and target
+X = data[["Revenue", "Margin", "Industry"]]
+y = data["RiskScore"]
+
+# Encode categorical industry column
+preprocessor = ColumnTransformer(transformers=[
+    ("cat", OneHotEncoder(handle_unknown="ignore"), ["Industry"])
+], remainder="passthrough")
+
+# Create pipeline
+model = make_pipeline(preprocessor, RandomForestRegressor(n_estimators=100, random_state=42))
+
+# Train model
+model.fit(X, y)
+
+# Save model
+joblib.dump(model, "risk_model.pkl")
+print("✅ risk_model.pkl saved!")

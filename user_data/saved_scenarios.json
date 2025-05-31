@@ -1,0 +1,261 @@
+[
+  {
+    "params": {
+      "company_name": "",
+      "industry": "Tech",
+      "base_revenue": 300000,
+      "growth_rates": [
+        0.12,
+        0.12,
+        0.12,
+        0.12,
+        0.12
+      ],
+      "margin_forecast": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "discount_rate": 0.1,
+      "terminal_growth": 0.03,
+      "years": 5,
+      "risk_adjustment": 0.045
+    },
+    "results": {
+      "valuation": 0.0,
+      "terminal_value": 0.0,
+      "revenue_forecast": [
+        336000.00000000006,
+        376320.00000000006,
+        421478.40000000014,
+        472055.8080000002,
+        528702.5049600002
+      ],
+      "cash_flows": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "metadata": {
+      "created_at": "2025-04-16T15:22:01.710483",
+      "analyst": "admin",
+      "report_title": "Business Valuation Report"
+    }
+  },
+  {
+    "params": {
+      "company_name": "Sheba",
+      "industry": "Tech",
+      "base_revenue": 300000,
+      "growth_rates": [
+        0.12,
+        0.12,
+        0.12,
+        0.12,
+        0.12
+      ],
+      "margin_forecast": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "discount_rate": 0.1,
+      "terminal_growth": 0.03,
+      "years": 5,
+      "risk_adjustment": 0.18
+    },
+    "results": {
+      "valuation": 0.0,
+      "terminal_value": 0.0,
+      "revenue_forecast": [
+        336000.00000000006,
+        376320.00000000006,
+        421478.40000000014,
+        472055.8080000002,
+        528702.5049600002
+      ],
+      "cash_flows": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "metadata": {
+      "created_at": "2025-04-16T15:29:25.868844",
+      "analyst": "admin",
+      "report_title": "Sheba Valuation Report"
+    }
+  },
+  {
+    "name": "New Expansion Plan",
+    "changes": {
+      "revenue": 0.0,
+      "costs": 0.0,
+      "growth": 0.0,
+      "risk": 0.0
+    },
+    "created_at": "2025-04-16T15:31:11.019012",
+    "created_by": "admin"
+  },
+  {
+    "params": {
+      "company_name": "caleb berg",
+      "industry": "Tech",
+      "base_revenue": 300000,
+      "growth_rates": [
+        0.12,
+        0.12,
+        0.12,
+        0.12,
+        0.12
+      ],
+      "margin_forecast": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "discount_rate": 0.1,
+      "terminal_growth": 0.03,
+      "years": 5,
+      "risk_adjustment": 0.18
+    },
+    "results": {
+      "valuation": 0.0,
+      "terminal_value": 0.0,
+      "revenue_forecast": [
+        336000.00000000006,
+        376320.00000000006,
+        421478.40000000014,
+        472055.8080000002,
+        528702.5049600002
+      ],
+      "cash_flows": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "metadata": {
+      "created_at": "2025-04-17T11:18:36.230833",
+      "analyst": "admin",
+      "report_title": "caleb berg Valuation Report"
+    }
+  },
+  {
+    "params": {
+      "company_name": "",
+      "industry": "Tech",
+      "base_revenue": 300000,
+      "growth_rates": [
+        0.12,
+        0.12,
+        0.12,
+        0.12,
+        0.12
+      ],
+      "margin_forecast": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "discount_rate": 0.1,
+      "terminal_growth": 0.03,
+      "years": 5,
+      "risk_adjustment": 0.18
+    },
+    "results": {
+      "valuation": 0.0,
+      "terminal_value": 0.0,
+      "revenue_forecast": [
+        336000.00000000006,
+        376320.00000000006,
+        421478.40000000014,
+        472055.8080000002,
+        528702.5049600002
+      ],
+      "cash_flows": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "metadata": {
+      "created_at": "2025-04-17T22:59:12.866457",
+      "analyst": "admin",
+      "report_title": "Business Valuation Report"
+    }
+  },
+  {
+    "params": {
+      "company_name": "Carolyn",
+      "industry": "Tech",
+      "base_revenue": 300000,
+      "growth_rates": [
+        0.1,
+        0.15,
+        0.14,
+        0.26,
+        0.21,
+        0.24,
+        0.4
+      ],
+      "margin_forecast": [
+        0.25,
+        0.25,
+        0.25,
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "discount_rate": 0.1,
+      "terminal_growth": 0.03,
+      "years": 7,
+      "risk_adjustment": 0.15
+    },
+    "results": {
+      "valuation": 686649.1448800049,
+      "terminal_value": 281064.9750678797,
+      "revenue_forecast": [
+        330000.0,
+        379499.99999999994,
+        432630.0,
+        545113.7999999999,
+        659587.698,
+        817888.7455199999,
+        1145044.2437279997
+      ],
+      "cash_flows": [
+        82500.0,
+        94874.99999999999,
+        108157.5,
+        136278.44999999998,
+        164896.9245,
+        204472.18637999997,
+        286261.06093199993
+      ]
+    },
+    "metadata": {
+      "created_at": "2025-04-19T12:19:08.596914",
+      "analyst": "admin",
+      "report_title": "Carolyn Valuation Report"
+    }
+  }
+]

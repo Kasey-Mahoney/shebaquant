@@ -1,0 +1,35 @@
+class ColorScheme(Enum):
+    """Predefined color schemes for the application"""
+    # ... (your existing color schemes definitions remain here) ...
+
+def check_contrast(background: str, text: str) -> float:
+    """Calculate contrast ratio between two colors (4.5 or higher recommended)"""
+    # Convert hex to RGB values (0-255)
+    def hex_to_rgb(hex_color):
+        hex_color = hex_color.lstrip('#')
+        return tuple(int(hex_color[i:i+2], 16) for i in (0, 2, 4))
+    
+    bg_r, bg_g, bg_b = hex_to_rgb(background)
+    text_r, text_g, text_b = hex_to_rgb(text)
+    
+    # Calculate relative luminance
+    def get_luminance(r, g, b):
+        rsrgb = r/255
+        gsrgb = g/255
+        bsrgb = b/255
+        
+        r = rsrgb/12.92 if rsrgb <= 0.03928 else ((rsrgb+0.055)/1.055)**2.4
+        g = gsrgb/12.92 if gsrgb <= 0.03928 else ((gsrgb+0.055)/1.055)**2.4
+        b = bsrgb/12.92 if bsrgb <= 0.03928 else ((bsrgb+0.055)/1.055)**2.4
+        
+        return 0.2126 * r + 0.7152 * g + 0.0722 * b
+    
+    l1 = get_luminance(bg_r, bg_g, bg_b)
+    l2 = get_luminance(text_r, text_g, text_b)
+    
+    # Return contrast ratio
+    return (max(l1, l2) + 0.05) / (min(l1, l2) + 0.05)
+
+class FontFamily(Enum):
+    """Font options for the application"""
+    # ... (rest of your existing code continues below) ...
